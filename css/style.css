@@ -1543,7 +1543,7 @@ span.typed {
 .main-timeline{
     overflow: hidden;
     position: relative;
-    padding: 0px 0;
+    padding: 20px 0;
 }
 .main-timeline:before{
     content: "";
@@ -1553,6 +1553,7 @@ span.typed {
     position: absolute;
     top: 0;
     left: 50%;
+    display: none;
 }
 .main-timeline .timeline{
     width: 50%;
