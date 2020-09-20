@@ -1,681 +1,507 @@
-<!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from elmanawy.info/demo/mulan/ltr/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2019 05:01:40 GMT -->
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Mulan / CV Template + RTL" />
-    <meta name="keywords"
-        content="" />
-    <meta name="mareta" content="Resume Mareta" />
-    <link rel="icon" href="images/icon.png">
-    <title>Mareta Ayu Handanari</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- Animation -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <!-- Light Case -->
-    <link rel="stylesheet" href="css/lightcase.min.css" type="text/css">
-    <!-- Template style -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <link href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+    <link rel="stylesheet" href="css/style-onthi.css">
 </head>
-
 <body>
-    <!-- preloader -->
-    <div id="preloader">
-        <div id="preloader-circle">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!-- /preloader -->
 
-    <div class="wrapper-page">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <div class="profile-picture-block">
-                    <div class="my-photo">
-                        <img src="images/me.jpg" class="img-fluid" alt="image">
-                    </div>
-                </div>
-                <!-- Header Head -->
-                <div class="site-title-block">
-                    <div class="site-title">Mareta Ayu Handanari</div>
-                    <div class="type-wrap">
-                        <div class="typed-strings">
-                            <span>Marketing Engineer</span>
-                            <span>March, 08th 1999</span>
-                            <span>Jakarta, Indonesia</span>
-                        </div>
-                        <span class="typed"></span>
-                    </div>
-                </div>
-                <!-- /Header Head -->
-
-                <!-- Navigation -->
-                <div class="site-nav">
-                    <!-- Main menu -->
-                    <ul class="header-main-menu" id="header-main-menu">
-                        <li><a class="active" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#about-me"><i class="fas fa-user-tie"></i> About Me</a></li>
-                        <li><a href="#resume"><i class="fas fa-award"></i> Resume</a></li>
-                        <li><a href="#portfolio"><i class="fas fa-business-time"></i> Portfolio</a></li>
-                        <li><a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a></li>
-                    </ul>
-                    <!-- /Main menu -->
-
-                    <!-- Copyrights -->
-                    <div class="copyrights">Maretacodes 2019</div>
-                    <!-- / Copyrights -->
-                </div>
-                <!-- /Navigation -->
+    <div id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-light bg-header fixed-top">
+            <div class="container">
+             <a class="navbar-brand mobile" href="#"><img src="images/ic_mareta.png" alt="" width="48"></a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <!-- 1 -->
+                    <li class="nav-item mx-md-2 my-auto"><a href="#hello" class="nav-link">Hello</a></li>
+                    <!-- 2 -->
+                    <li class="nav-item mx-md-2 my-auto"><a href="#skill" class="nav-link">Skill</a></li>
+                    <!-- 3 -->
+                    <li class="nav-item mx-md-2 my-auto"><a href="#experience" class="nav-link">Experience</a></li>
+                    <!-- 4 -->
+                    <li class="nav-item mx-md-2 my-auto"><a href="#project" class="nav-link">Project</a></li>
+                    <!-- 5 -->
+                    <li class="nav-item mx-md-2 my-auto"><a href="#connect" class="nav-link">Connect</a></li>
+                    
+                </ul>
+                
+              </div>
             </div>
-        </header>
-        <!-- /Header -->
-
-        <!-- Mobile Header -->
-        <div class="responsive-header">
-            <div class="responsive-header-name">
-                <img class="responsive-logo" src="images/me.jpg" alt="" />
-                Mareta Ayu Handanari
-            </div>
-            <span class="responsive-icon"><i class="lnr lnr-menu"></i></span>
-        </div>
-        <!-- /Mobile Header -->
-
-        <!-- Main Content Pages -->
-        <div class="content-pages">
-            <!-- Subpages -->
-            <div class="sub-home-pages">
-                <!-- Start Page home -->
-                <section id="home" class="sub-page start-page">
-                    <div class="sub-page-inner">
-                        <div class="mask"></div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                <div class="title-block">
-                                    <h2>Mareta Ayu Handanari</h2>
-                                    <div class="type-wrap">
-                                        <div class="typed-strings">
-                                            <span>Marketing Engineer</span>
-                                            <span>March, 08th 1999</span>
-                                            <span>Jakarta, Indonesia</span>
-                                        </div>
-                                        <span class="typed"></span>
-                                    </div>
-                                    <div class="home-buttons">
-                                        <a href="#contact" class="bt-submit"><i class="lnr lnr-envelope"></i> Contact
-                                            Me</a>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- /Start Page home -->
-
-                <!-- About Me Subpage -->
-                <section id="about-me" class="sub-page">
-                    <div class="sub-page-inner">
-                        <div class="section-title">
-                            <div class="main-title">
-                                <div class="title-main-page">
-                                    <h4>About me</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-content">
-                            <!-- about me -->
-                            <div class="row pb-30">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <h3>Mareta Ayu Handanari</h3>
-                                    <span class="about-location"><i class="lnr lnr-map-marker"></i> Jakarta,
-                                        Indonesia</span>
-                                    <p class="about-content">
-                                        Hi There! I am Mareta Ayu Handanari. born in Pekalongan, on March 08th
-                                        1999. Curently living in Jakarta. I work as a Marketing Engineer at Ruangguru.com since 2019.
-                                    </p>
-                                    <p class="about-content">
-                                        I am a hard worker, able to work in individual or team, kind, communicative,
-                                        honest, creative and responsible.
-                                    </p>
-                                </div>
-
-                                <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="box-img">
-                                        <img src="images/A3.jpg" class="img-fluid" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <!-- About Me Subpage -->
-
-                <!-- Resume Subpage -->
-                <section id="resume" class="sub-page">
-                    <div class="sub-page-inner">
-                        <div class="section-title">
-                            <div class="main-title">
-                                <div class="title-main-page">
-                                    <h4>Resume</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-content">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-
-                                    <!-- Work History -->
-                                    <div class="pb-300">
-                                        <div class="section-head col-sm-12">
-                                            <h4>
-                                                <span>Work</span>
-                                                Experience
-                                            </h4>
-
-                                        </div>
-
-                                        <div class="main-timeline">
-                                            <div class="timeline currecnt">
-                                                <div class="timeline-icon">
-                                                   <img src="images/logo-rg.jpg" alt="logo-rg">
-                                                 </div>
-                                               <div class="timeline-content">
-                                                   <span class="date">November 2019 - Now</span>
-                                                   <h5 class="title">Marketing Engineer</h5>
-                                               </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="main-timeline">
-                                            <div class="timeline currecnt">
-                                                <div class="timeline-icon">
-                                                    <img src="images/logo-rg.jpg" alt="logo-rg">
-                                                </div>
-                                                <div class="timeline-content">
-                                                    <span class="date">September 2019 - November 2019</span>
-                                                    <h5 class="title">Marketing Engineer Intern</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="main-timeline">
-                                            <div class="timeline currecnt">
-                                                <div class="timeline-icon">
-                                                    <img src="images/tech.jpg" alt="logo-technoit">
-                                                </div>
-                                                <div class="timeline-content">
-                                                    <span class="date">January 2019 - March 2019</span>
-                                                    <h5 class="title">UI Designer Intern</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!-- /Work History -->
-
-                                    <!-- Skills -->
-                                    <div class="pb-30 pt-30">
-                                        <div class="row list-skills">
-                                            <!-- Work Skills -->
-                                            <div class="col-md-7">
-                                                <div class="special-block-bg">
-                                                    <div class="section-head">
-                                                        <h4>
-                                                            <span>Work </span>
-                                                            Skills
-                                                        </h4>
-                                                    </div>
-                                                    <div class="skills-items skills-progressbar">
-                                                        <div class="skill-item">
-                                                            <h4>HTML</h4>
-                                                            <div class="progress">
-                                                                <div class="progress-bar wow fadeInLeft"
-                                                                    data-progress="70%" style="width: 70%;"
-                                                                    data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                                </div>
-                                                            </div>
-                                                            <span>70%</span>
-                                                        </div>
-                                                        <div class="skill-item">
-                                                            <h4>CSS</h4>
-                                                            <div class="progress">
-                                                                <div class="progress-bar wow fadeInLeft"
-                                                                    data-progress="60%" style="width: 60%;"
-                                                                    data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                                </div>
-                                                            </div>
-                                                            <span>60%</span>
-                                                        </div>
-                                                        <div class="skill-item">
-                                                            <h4>Javascript</h4>
-                                                            <div class="progress">
-                                                                <div class="progress-bar wow fadeInLeft"
-                                                                    data-progress="60%" style="width: 60%;"
-                                                                    data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                                </div>
-                                                            </div>
-                                                            <span>50%</span>
-                                                        </div>
-                                                        <div class="skill-item">
-                                                            <h4>Java</h4>
-                                                            <div class="progress">
-                                                                <div class="progress-bar wow fadeInLeft"
-                                                                    data-progress="75%" style="width: 75%;"
-                                                                    data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                                </div>
-                                                            </div>
-                                                            <span>60%</span>
-                                                        </div>
-                                                        <div class="skill-item">
-                                                            <h4>Graphic Design</h4>
-                                                            <div class="progress">
-                                                                <div class="progress-bar wow fadeInLeft"
-                                                                    data-progress="80%" style="width: 80%;"
-                                                                    data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                                </div>
-                                                            </div>
-                                                            <span>80%</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /Work Skills -->
-
-
-                                            <!-- Languages Skills -->
-                                            <div class="col-md-5">
-                                                <div class="special-block-bg">
-                                                    <div class="section-head">
-                                                        <h4>
-                                                            <span>Language</span>
-                                                            Skills
-                                                        </h4>
-                                                    </div>
-                                                    <div class="skills-items">
-                                                        <div class="language-skill row">
-                                                            <h4 class="col-md-6 text-left">Indonesia <span>Native or
-                                                                    biingual proficiency</span> </h4>
-                                                            <ul class="col-md-6 text-right rating">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                            </ul>
-                                                            <br><br>
-                                                        </div>
-
-                                                        <div class="language-skill row">
-                                                            <h4 class="col-md-6 text-left">Java <span>Native or biingual
-                                                                    proficiency</span> </h4>
-                                                            <ul class="col-md-6 text-right rating">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                            </ul>
-                                                            <br><br>
-                                                        </div>
-                                                        <div class="language-skill row">
-                                                            <h4 class="col-md-6 text-left">English <span>Upper
-                                                                    Intermediate</span> </h4>
-                                                            <ul class="col-md-6 text-right rating">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star-half-alt"></i></li>
-                                                                <li><i class="fa fa-star half-star"></i></li>
-
-                                                            </ul>
-                                                            <br><br>
-                                                        </div>
-                                                        <div class="language-skill row">
-                                                            <h4 class="col-md-6 text-left">Germany <span>Beginner</span>
-                                                            </h4>
-                                                            <ul class="col-md-6 text-right rating">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star half-star"></i></li>
-                                                                <li><i class="fa fa-star half-star"></i></li>
-                                                                <li><i class="fa fa-star half-star"></i></li>
-                                                            </ul>
-                                                            <br><br>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /Languages Skills -->
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Work -->
-
-                                    <div class="row list-skills">
-                                        <!-- Work Skills -->
-                                        <div class="col-md-7">
-                                            <div class="special-block-bg">
-                                                <div class="section-head">
-
-                                                    <h4>
-                                                        <span>Software </span>
-                                                        Skills
-                                                    </h4>
-                                                </div>
-                                                <div class="skills-items skills-progressbar">
-                                                    <div class="skill-item">
-                                                        <h4>Adobe XD</h4>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-progress="90%"
-                                                                style="width: 90%;" data-wow-duration="1.5s"
-                                                                data-wow-delay="1.2s"> </div>
-                                                        </div>
-                                                        <span>90%</span>
-                                                    </div>
-                                                    <div class="skill-item">
-                                                        <h4>Adobe Illustrator</h4>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-progress="75%"
-                                                                style="width: 75%;" data-wow-duration="1.5s"
-                                                                data-wow-delay="1.2s"> </div>
-                                                        </div>
-                                                        <span>75%</span>
-                                                    </div>
-                                                    <div class="skill-item">
-                                                        <h4>Adobe Photoshop</h4>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-progress="80%"
-                                                                style="width: 80%;" data-wow-duration="1.5s"
-                                                                data-wow-delay="1.2s"> </div>
-                                                        </div>
-                                                        <span>80%</span>
-                                                    </div>
-                                                    <div class="skill-item">
-                                                        <h4>Balsamiq Mockups</h4>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-progress="90%"
-                                                                style="width: 90%;" data-wow-duration="1.5s"
-                                                                data-wow-delay="1.2s"> </div>
-                                                        </div>
-                                                        <span>90%</span>
-                                                    </div>
-                                                    <div class="skill-item">
-                                                        <h4>Microsoft Office</h4>
-                                                        <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-progress="85%"
-                                                                style="width: 85%;" data-wow-duration="1.5s"
-                                                                data-wow-delay="1.2s"> </div>
-                                                        </div>
-                                                        <span>85%</span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /Work Skills -->
-
-
-                                        <!-- Award -->
-                                        <div class="col-md-5">
-                                            <div class="special-block-bg">
-                                                <div class="section-head">
-                                                    <h4>
-                                                        <span>Honor &</span>
-                                                        Award
-                                                    </h4>
-                                                </div>
-                                                <div class="skills-items">
-                                                    <div class="language-skill row">
-                                                        <h4 class="col-md-12 text-left">Best Graduate Engineering Program<span>GPA: 3.92</span> </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-items">
-                                                    <div class="language-skill row">
-                                                        <h4 class="col-md-12 text-left">Top Final Project<span>Application of Online Tutor Bookig Based on Android</span> </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-items">
-                                                    <div class="language-skill row">
-                                                        <h4 class="col-md-12 text-left">The Most Outstanding Student
-                                                            2018<span>Grade Point: 3.92</span> </h4>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="section-head">
-                                                    <h4>
-                                                        <span>License &</span>
-                                                        Certification
-                                                    </h4>
-                                                </div>
-                                                <div class="skills-items">
-                                                    <div class="language-skill row">
-                                                        <h4 class="col-md-12 text-left">UX
-                                                            Concepts<span><br>Brainbench</span> </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-items">
-                                                    <div class="language-skill row">
-                                                        <h4 class="col-md-12 text-left">Advanced Android Applications Development<span><br>InformIT</span> </h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Education History -->
-                                <div class="pt-30">
-                                    <div class="section-head">
-                                        <h4>
-                                            <span>Education</span>
-                                            Background
-                                        </h4>
-                                    </div>
-                                    <div class="main-timeline">
-                                        <div class="timeline currecnt">
-                                            <div class="timeline-icon">
-                                                <img src="images/number.png" alt="">
-                                            </div>
-                                            <div class="timeline-content">
-                                                <h5 class="title">Bandung State Polytechnic</h5>
-                                                <p>Software Engineering</p>
-                                                <p>GPA 3.92 out of 4.00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Education History -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            <!-- End of Resume Subpage -->
-
-            <!-- Portfolio Subpage -->
-            <section id="portfolio" class="sub-page">
-                <div class="sub-page-inner">
-                    <div class="section-title">
-                        <div class="main-title">
-                            <div class="title-main-page">
-                                <h4>Portfolio</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-content">
-                        <br><br>
-                        <div class="portfolio-grid portfolio-trigger" id="portfolio-page">
-                            <div class="label-portfolio"><span class="rotated-sub">Projects</span><span
-                                    class="project-count">4</span></div>
-                            <div class="row">
-                                <div
-                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item branding photography all">
-                                    <div class="portfolio-img">
-                                        <img src="images/portfolio/student.jpg" class="img-responsive" alt="">
-                                    </div>
-                                    <div class="portfolio-data">
-                                        <h4><a href="#">MyTutor</a></h4>
-                                        <p class="meta">Student App</p>
-                                        <div class="portfolio-attr">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item web-design branding all">
-                                    <div class="portfolio-img"><img src="images/portfolio/tutor.jpg"
-                                            class="img-responsive" alt=""></div>
-                                    <div class="portfolio-data">
-                                        <h4><a href="#">MyTutor</a></h4>
-                                        <p class="meta">Tutor App</p>
-                                        <div class="portfolio-attr">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item branding all">
-                                    <div class="portfolio-img"><img src="images/portfolio/webMT.jpg"
-                                            class="img-responsive" alt=""></div>
-                                    <div class="portfolio-data">
-                                        <h4><a href="#">MyTutor</a></h4>
-                                        <p class="meta">Web Admin</p>
-                                        <div class="portfolio-attr">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item web-design branding all">
-                                    <div class="portfolio-img"><img src="images/portfolio/appso.jpg"
-                                            class="img-responsive" alt=""></div>
-                                    <div class="portfolio-data">
-                                        <h4><a href="#">APPSO</a></h4>
-                                        <p class="meta">Front End www.appso.id</p>
-                                        <div class="portfolio-attr">
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </section>
-        <!-- /Portfolio Subpage -->
-
-        <!-- Contact Subpage -->
-        <section id="contact" class="sub-page">
-            <div class="sub-page-inner">
-                <div class="section-title">
-                    <div class="main-title">
-                        <div class="title-main-page">
-                            <h4>Contact</h4>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact Info -->
-                <div class="sidebar-textbox row pb-50">
-                    <div class="contact-info d-flex col-md-4">
-                        <div class="w-25">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                        </div>
-                        <div class="contact-text w-75">
-                            <h2>Phone</h2>
-                            <a href="tel:+6285870924893" style="color: #999999">+6285870924893</a>
-                        </div>
+          </nav>
+      </div>
+    <header>
+        <!-- <div class="container"> -->
+            <div class="row" id="hello">
+                <div class="col-sm-12 col-md-6">
+                    <img src="images/maretaah.png" alt="mareta" class="web">
+                    <div class="mobile">
+                        <img src="images/maretaamobile.png" alt="" >
                     </div>
                     
-                    <div class="contact-info d-flex col-md-4">
-                        <div class="w-25">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                        </div>
-                        <div class="contact-text w-75">
-                            <h2>Address</h2>
-                            <p>Jakarta, Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="contact-info d-flex col-md-4">
-                            <div class="w-25">
-                                <div class="contact-icon">
-                                    <i class="far fa-envelope-open"></i>
-                                </div>
-                            </div>
-                            <div class="contact-text w-75">
-                                <h2>Email</h2>
-                                <a href="mailto:maretahandanari@gmail.com?Subject=Hello%20Mareta" style="color: #999999">maretaahandanari@gmail.com</a>
-                            </div>
-                        </div>
                 </div>
-                <!-- /Contact info -->
+                <div class="col-sm-12 col-md-6 text-hello">
+                    <h1 class="title">Hello</h1>
+                    <h2 class="title">I'm Mareta</h2>
+                    <p>Born in Pekalongan, 08 March 1999. <br>
+                        I am very interested in exploring more knowledge<br> about design and web development<br>So, <b>Design</b> - <b>Code</b> hmm why not both?</p>
+                    <button class="connect">Connect with me</button>    
+                </div>
+            <!-- </div> -->
 
-
-                <!-- Social Media -->
-                <div class="pt-50">
-                    <div class="social-media-block">
-                        <h4>Follow Me: </h4>
-                        <ul class="social-media-links">
-                            <li><a href="linkedin.com/in/maretahandanari"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li><a href="twitter.com/maretahandanari"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="instagram.com/maretacodes"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+            <div class="container" id="skill">
+                <div class="col giai-phap border-left-custom">
+                    <h3>Skill</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/Design 1.png" alt="mareta">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/Code 1.png" alt="mareta">
                     </div>
                 </div>
-                <!-- /Social Media -->
             </div>
-            <!-- /Contact Details -->
+            </div>
+    </header>
+    <main>
+        <section class="sec-2" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col giai-phap border-left-custom">
+                        <h3>Working Experience</h3>
+                        <!-- <h2>ÔN TẬP VÀO LỚP 10</h2> -->
+                    </div>
+                </div>
+                <!-- video 1 -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 video">
+                        <a href="https://www.youtube.com/watch?v=4eIzunU0xZg" data-youtube-id="4eIzunU0xZg" class="video-thumb js-trigger-video-modal">
+                            <img class="video-banner-img" src="images/working.svg" alt=""/>
+                          </a>
+                            <section class="video-modal">
+                                <div id="video-modal-content" class="video-modal-content">
+                                   <iframe 
+                                      width="100%" 
+                                      height="100%" 
+                                      frameborder="0" 
+                                      allow="autoplay" 
+                                      allowfullscreen></iframe>
+                                    <a href="#" class="close-video-modal" >
+                                        <!-- X close video icon -->
+                                      <img src="https://cdn2.hubspot.net/hubfs/2828691/schedule-kgr/close.png" class="icon-x-close">
+                                    </a>
+                                </div>
+                                <div class="overlay"></div>
+                            </section>
+                        <!-- <img class=""src="https://cdn2.hubspot.net/hubfs/2828691/revamp-kien-onthi/Group%206%201.png" alt="video"
+                        data-toggle="modal" data-target="#modal1" > -->
+                    </div>
+                    <div class="col-md-8 col-sm-12 my-auto">
+                        <div class="row d-lg-flex">
+                            <div class="col">
+                                <div class="experience">
+                                    <img src="images/1num.png">
+                                </div>
+                                <h2>UI Designer Intern</h2>
+                                <h3>TechnoIT</h3>
+                                <h4>Jan - March 2019</h4>
+                            </div>
+                            <div class="col">
+                                <div class="experience">
+                                    <img src="images/2num.png">
+                                </div>
+                                <h2>Marketing Engineer Intern</h2>
+                                <h3>Ruangguru</h3>
+                                <h4>Sept - Nov 2019</h4>
+                            </div>
+                            <div class="col">
+                                <div class="experience">
+                                    <img src="images/3num.png">
+                                </div>
+                                <h2>Marketing Engineer</h2>
+                                <h3>Ruangguru</h3>
+                                <h4>Nov 2019 - Present</h4>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+
+                
+                <!-- video 2 -->
+                <div class="row ">
+                    <div class="col giai-phap border-left-custom">
+                        <h3>Volunteering Experience</h3>
+                        <!-- <h2>ÔN TẬP VÀO LỚP 10</h2> -->
+                    </div>
+                </div>
+                <div class="row luyen-de mt-5">
+                    <div class="col-md-4 col-sm-12 video">
+                        <!-- <img src="https://cdn2.hubspot.net/hubfs/2828691/revamp-kien-onthi/Group%209%201.png" alt="" > -->
+                        <a href="https://www.youtube.com/watch?v=oWGzJUoBQn4" data-youtube-id="oWGzJUoBQn4" class="video-thumb js-trigger-video-modal">
+                            <img class="video-banner-img" src="images/volunteer.svg" alt=""/>
+                          </a>
+                            <section class="video-modal">
+                                <div id="video-modal-content" class="video-modal-content">
+                                   <iframe 
+                                      id="youtube" 
+                                      width="100%" 
+                                      height="100%" 
+                                      frameborder="0" 
+                                      allow="autoplay" 
+                                      allowfullscreen></iframe>
+                                    <a href="#" class="close-video-modal" >
+                                        <!-- X close video icon -->
+                                      <img src="https://cdn2.hubspot.net/hubfs/2828691/schedule-kgr/close.png" class="icon-x-close">
+                                    </a>
+                                </div>
+                                <div class="overlay"></div>
+                            </section>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="row d-lg-flex">
+                            <div class="col">
+                                <div class="experience">
+                                    <img src="images/1num.png">
+                                </div>
+                                <h2>Operation Team</h2>
+                                <h3>CiptaNyata by Belva Devara</h3>
+                                <h4>March - May 2020</h4>
+                            </div>
+                            <div class="col">
+                                <div class="experience">
+                                    <img src="images/2num.png">
+                                </div>
+                                <h2>Fronted Engineer</h2>
+                                <h3>Gerakan Masker Kain Untuk Semua</h3>
+                                <h4>March - May 2020</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- End Contact Subpage -->
+        <section class="sec-3" id="project">
+            <div class="container">
+                <div class="row">
+                    <div class="col giai-phap border-left-custom">
+                        <h3>Project</h3>
+                    </div>
+                </div>
+                
+<!--                 gallery for web  -->
+                <div  class="row gallery-photos text-center">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/student.png" alt="" />
+                                        <div class="mask">
+                                        <h3>MyTutor - Student App</h3>
+                                        <p>
+                                            MyTutor is an application of online tutor booking based on android. In student app, it's easy to order private tutor in some click and they can choose the location of learning acording to what they want.
+                                        </p>
+                                        <a href="https://dribbble.com/shots/14152405-App-Online-Tutor-Booking-Based-on-Android-for-Student" class="btn btn-default">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                            <td >
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/tutor.png" alt="" />
+                                        <div class="mask">
+                                        <h3>MyTutor - Tutor App</h3>
+                                        <p>
+                                            MyTutor is an application of online tutor booking based on android. In tutor app, they can accept or reject orders, answer the question from students and tutor can arrange schedules and learning  locations as needed. 
+                                        </p>
+                                        <a href="https://dribbble.com/shots/14152395-MyTutor-App-Online-Tutor-Booking-Based-on-Android-for-Tutor" class="btn btn-default">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                            <td >
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/covid19app.png" alt="" />
+                                        <div class="mask">
+                                        <h3>COVID-19 Tracker App</h3>
+                                        <p>
+                                            COVID-19 Tracker App is an Android and app to provide detailed information about the spread of covid around the world, in this application also provides other information such as referral hospitals, emergency telephone numbers and information on COVID-19 prevention.
+                                        </p>
+                                        <a href="https://dribbble.com/shots/14152826-COVID-19-Tracker-App-Dark-Mode" class="btn btn-default">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/admin.png" alt="" />
+                                        <div class="mask">
+                                        <h3>MyTutor - Administrator</h3>
+                                        <p>
+                                            Administrator can manage student data, teacher data, class data, subject data, article  category data, article data in MyTutor App.
+                                        </p>
+                                        <a href="https://dribbble.com/shots/14153113-Dashboard-Admin-Web" class="btn btn-default">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                            <td >
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/bagusprasmanan.png" alt="" />
+                                        <div class="mask">
+                                        <h3>Bagus Prasmanan</h3>
+                                        <p>
+                                            A simple landing page to provide information about buffet services, gamelan equipment rental, etc.
+                                        </p>
+                                        <a href="https://dribbble.com/shots/14151028-Prasmanan-Landing-Page" class="btn btn-default">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                            <td >
+                                <div class="overlay-item overlay-effect">
+                                    <img src="images/appso.jpg" alt="" />
+                                        <div class="mask">
+                                        <h3>APPSO </h3>
+                                        <p>
+                                            APPSO is an application of online school  
+                                            payments based on web.
+                                        </p>
+                                        <a href="http://appso.id/" class="btn btn-default" target="_blank">View More</a>
+                                        </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-    </div>
-    <!-- /Page changer wrapper -->
-    </div>
-    <!-- /Main Content -->
-    </div>
+                <!-- ini slick mobile  -->
+                <div class="row slick-mobile text-center">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; padding: 0 20px;">
+                        
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="https://dribbble.com/shots/14152405-App-Online-Tutor-Booking-Based-on-Android-for-Student"><img class="d-block w-100" src="images/student.png" alt="First slide"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://dribbble.com/shots/14152395-MyTutor-App-Online-Tutor-Booking-Based-on-Android-for-Tutor"><img class="d-block w-100" src="images/tutor.png" alt="Second slide"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://dribbble.com/shots/14152826-COVID-19-Tracker-App-Dark-Mode"><img class="d-block w-100" src="images/covid19app.png" alt="Third slide">
+                          </div></a>
 
-    <!--JS Files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--Owl Coursel-->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Typing Text -->
-    <script src="js/typed.min.js"></script>
-    <!--Images LightCase-->
-    <script src="js/lightcase.min.js"></script>
-    <!-- Portfolio filter -->
-    <script src="js/jquery.isotope.min.js"></script>
-    <!-- Wow Animation -->
-    <script src="js/wow.min.js"></script>
-    <!-- Map -->
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBkdsK7PWcojsO-o_q2tmFOLBfPGL8k8Vg&amp;language=en">
+                          <div class="carousel-item">
+                            <a href="https://dribbble.com/shots/14153113-Dashboard-Admin-Web"><img class="d-block w-100" src="images/admin.png" alt="Fourth slide"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://dribbble.com/shots/14151028-Prasmanan-Landing-Page"><img class="d-block w-100" src="images/bagusprasmanan.png" alt="Fifth slide"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="http://appso.id/"><img class="d-block w-100" src="images/appso.jpg" alt="Sixth slide"></a>
+                          </div>
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                          </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect" id="connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col giai-phap border-left-custom">
+                        <h3>Connect</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/connect.svg" alt="mareta" class="web" width="400">
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-hello">
+                        <div class="row mb-3">
+                            <div class="col-2">
+                                <img src="images/linkedin.svg" alt="linkedin" width="50">
+                            </div><br>
+                            <div class="col-10.5 my-auto">
+                                <a href="http://linkedin.com/in/maretahandanari"><h4>
+                                linkedin.com/in/maretahandanari</h4></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-2">
+                                <img src="images/dribbble.svg" alt="dribbble" width="50">
+                            </div><br>
+                            <div class="col-10.5 my-auto">
+                                <a href="http://dribbble.com/maretahandanari"><h4>
+                                dribbble.com/maretahandanari</h4></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-2">
+                                <img src="images/instagram.svg" alt="dribbble" width="50">
+                            </div><br>
+                            <div class="col-10.5 my-auto">
+                                <a href="instagram.com/mareta.handanari"><h4>
+                                    instagram.com/mareta.handanari</h4></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-2">
+                                <img src="images/gmail.svg" alt="dribbble" width="50">
+                            </div><br>
+                            <div class="col-10.5 my-auto">
+                                <a href="mailto: maretahandanari@gmail.com"><h4>
+                                maretahandanari@gmail.com</h4></a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="sec-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <p>2020 | Mareta Ayu Handanari</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center my-auto">
+                        <p>Made with love from Pekalongan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 10,
+      nav: true,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        }
+      }
+    })
+  });
+
+  $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+$(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 10);
+});
+
+//video 
+$(document).ready(function(){
+
+
+/* Toggle Video Modal
+-----------------------------------------*/
+function toggle_video_modal() {
+    
+    // Click on video thumbnail or link
+    $(".js-trigger-video-modal").on("click", function(e){
+      
+      // prevent default behavior for a-tags, button tags, etc. 
+        e.preventDefault();
+    
+      // Grab the video ID from the element clicked
+      var id = $(this).attr('data-youtube-id');
+
+      // Autoplay when the modal appears
+      // Note: this is intetnionally disabled on most mobile devices
+      // If critical on mobile, then some alternate method is needed
+      var autoplay = '?autoplay=1';
+
+      // Don't show the 'Related Videos' view when the video ends
+      var related_no = '&rel=0';
+
+      // String the ID and param variables together
+      var src = '//www.youtube.com/embed/'+id+autoplay+related_no;
+      
+      // Pass the YouTube video ID into the iframe template...
+      // Set the source on the iframe to match the video ID
+      $("#youtube").attr('src', src);
+      
+      // Add class to the body to visually reveal the modal
+      $("body").addClass("show-video-modal noscroll");
+    
+  });
+
+    // Close and Reset the Video Modal
+  function close_video_modal() {
+    
+    event.preventDefault();
+
+    // re-hide the video modal
+    $("body").removeClass("show-video-modal noscroll");
+
+    // reset the source attribute for the iframe template, kills the video
+    $("#youtube").attr('src', '');
+    
+  }
+  // if the 'close' button/element, or the overlay are clicked 
+    $('body').on('click', '.close-video-modal, .video-modal .overlay', function(event) {
+        
+      // call the close and reset function
+      close_video_modal();
+        
+  });
+  // if the ESC key is tapped
+  $('body').keyup(function(e) {
+      // ESC key maps to keycode `27`
+      if (e.keyCode == 27) { 
+        
+        // call the close and reset function
+        close_video_modal();
+        
+      }
+  });
+}
+toggle_video_modal();
+});
     </script>
-    <!-- Main Script -->
-    <script src="js/script.js"></script>
 </body>
-
-<!-- Mirrored from elmanawy.info/demo/mulan/ltr/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Apr 2019 05:01:55 GMT -->
-
 </html>
+
