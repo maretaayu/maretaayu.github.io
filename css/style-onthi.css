@@ -29,6 +29,8 @@ button.connect:hover{
 
 section.connect h4{
   color: #777;
+font-size: 14px !important;
+    text-align: left !important;
 }
 @media(min-width: 768px){
   .text-hello{
