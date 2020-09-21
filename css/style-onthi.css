@@ -55,8 +55,8 @@ h2.title{
 
 @media(max-width: 768px){
   section.connect h4{
-    font-size: 12px;
-    text-align: left;
+    font-size: 12px !important;
+    text-align: left !important;
   }
   h2.title{
     font-family: 'Playfair Display', serif;
