@@ -29,7 +29,7 @@ button.connect:hover{
 
 section.connect h4{
   color: #777;
-font-size: 14px !important;
+font-size: 16px !important;
     text-align: left !important;
 }
 @media(min-width: 768px){
@@ -56,10 +56,6 @@ h2.title{
 }
 
 @media(max-width: 768px){
-  section.connect h4{
-    font-size: 12px !important;
-    text-align: left !important;
-  }
   h2.title{
     font-family: 'Playfair Display', serif;
     font-size: 28px;
