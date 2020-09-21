@@ -4,12 +4,7 @@ h1.title{
   font-size: 48px;
 }
 
-h2.title{
-  font-family: 'Playfair Display', serif;
-  font-size: 72px;
-  font-weight: bold;
-  color: #F7B71D;
-}
+
 
 button.connect{
   background: transparent;
@@ -45,9 +40,35 @@ section.connect h4{
   .giai-phap{
     margin: 40px 70px;
 }
+.giai-phap h3{
+  color: #FFC304;
+  font-weight: bold !important;
+  font-size: 42px;
+}
+h2.title{
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: bold;
+  color: #F7B71D;
+}
 }
 
 @media(max-width: 768px){
+  section.connect h4{
+    font-size: 14px;
+    text-align: left;
+  }
+  h2.title{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #F7B71D;
+  }
+  .giai-phap h3{
+    color: #FFC304;
+    font-weight: bold !important;
+    font-size: 28px !important;
+}
   .text-hello{
     text-align: center;
   }
@@ -909,11 +930,7 @@ body, html{
   
   
   
-  .giai-phap h3{
-      color: #FFC304;
-      font-weight: bold !important;
-      font-size: 42px !important;
-  }
+  
   
   .giai-phap h2{
       color: #434856;
