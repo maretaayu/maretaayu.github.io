@@ -1029,19 +1029,18 @@ body, html{
       width: 50px !important;
       height: 50px !important;
   }
-  .carousel-indicators{
+  /* .carousel-indicators{
       bottom: unset !important;
       padding-left: 0;
       margin-right: 0;
       margin-left: 0;
-      /* margin: 50px 0; */;
   }
   
   .carousel-indicators li{
       height: 30px !important;
       background-color: #434856 !important;
       opacity: 0.1;
-  }
+  } */
   
   /* custom carousel  */
   .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
