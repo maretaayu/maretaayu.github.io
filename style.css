@@ -122,3 +122,20 @@ button.primary{
         flex-direction: column-reverse;
     }
 }
+
+/* optimization  */
+@media (min-width: 768px){
+    .hero__right img{
+        height: 420px;
+    }
+}
+@media (max-width: 768px){
+    .hero__right img{
+        height: 252px;
+        width: 300px;
+    }
+}
+.card__asset img{
+    width: 150px;
+    height: 150px;
+}
