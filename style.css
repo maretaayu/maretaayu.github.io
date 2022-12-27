@@ -11,7 +11,7 @@
     --bgSubtle: #F6E6FF;
 }
 body{
-    font-family: Sora;
+    font-family: 'Sora', sans-serif;
 }
 h1{
     color: var(--primary);
