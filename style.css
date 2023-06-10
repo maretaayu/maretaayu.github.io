@@ -2,17 +2,27 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  color: #333;
 }
 h1,
 p {
-  margin: 0.5rem 0;
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+p,
+a {
+  font-size: 1rem;
 }
 .container {
   background: url("asset/bg-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  padding-top: 160px;
+  display: grid;
+  align-items: center;
+  background-position: center;
 }
 
 .content {
@@ -22,19 +32,48 @@ p {
 }
 
 .socmed {
-  margin-top: 48px;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
 }
 
+.author {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
 a.cta {
-  margin: 2rem;
+  margin-top: 2rem;
   text-decoration: none;
   color: #333;
   background: #fff;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
+  width: 150px;
+  text-align: center;
   border-radius: 100px;
+}
+
+.avatar img {
+  border-radius: 100px;
+  border: 4px solid #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* about page  */
+.about {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  padding: 4rem 1.5rem;
+  place-content: baseline;
 }
