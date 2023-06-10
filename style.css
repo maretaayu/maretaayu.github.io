@@ -1,145 +1,40 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
-
-*/
-@font-face {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  @font-face {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-/* style guide  */
-:root{
-    --primary: #391164;
-    --secondary: #E13C7E;
-    --tertiary: #0085E1;
-    --textDark: #333;
-    --white: #fff;
-    --gradient1: linear-gradient(135deg, #B639F0 0%, #E33E80 51.56%, #F7BC83 100%);
-    --gradient2: linear-gradient(135deg, #2568A6 0%, #3179A2 51.56%, #F7BC83 100%);
-    --bgSubtle: #F6E6FF;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    font-family: 'Sora', sans-serif;
+h1,
+p {
+  margin: 0.5rem 0;
 }
-h1{
-    color: var(--primary);
+.container {
+  background: url("asset/bg-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 160px;
 }
 
-.hero__left{
-    margin: auto;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-  .page-center{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-.hero__right img{
-    width: 100%;
-}
-h2{
-    text-align: center;
-}
-.container-package{
-    background: var(--bgSubtle);
-    padding: 4.5rem 0;
+.socmed {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.card{
-box-shadow: 0px 8px 16px rgba(129, 134, 142, 0.08);
-border-radius: 12px;
-background-color: var(--white);
-}
-
-button.primary{
-    background-color: var(--primary);
-    padding: 0.75rem 1.5rem;
-    border-radius: 100px;
-    color: var(--white);
-    border: none;
-}
-
-/* desktop  */
-@media (min-width: 768px){
-    .container{
-        padding: 2rem 0;
-    }
-    .hero{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .group-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-    .card{
-        display: flex;
-        padding: 1.5rem;
-    }
-    .hero__right{
-        text-align: right;
-    }
-    .hero__right img{
-        width: 500px;
-    }
-}
-
-/* mobile  */
-@media (max-width: 768px){
-    .container{
-        padding: 3rem 0;
-    }
-    .hero{
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .group-cards{
-        display: grid;
-        gap: 1rem;
-    }
-    .card{
-        padding: 1rem;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
-
-/* Optimization  */
-@media (min-width: 768px){
-    .hero__right img{
-        height: 420px;
-    }
-}
-
-@media (max-width: 768px){
-    .hero__right img{
-        width: 300px;
-        height: 252px;
-    }
-}
-.card__asset img{
-    width: 150px;
-    height: 150px;
+a.cta {
+  margin: 2rem;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 100px;
 }
