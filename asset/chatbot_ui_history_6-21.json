@@ -1,0 +1,28 @@
+{
+  "version": 4,
+  "history": [
+    {
+      "id": "3cf65bd7-0938-4389-86d3-bdb8d234a446",
+      "name": "test",
+      "messages": [
+        {
+          "role": "user",
+          "content": "test"
+        },
+        {
+          "role": "assistant",
+          "content": "Hello! How can I assist you today?"
+        }
+      ],
+      "model": {
+        "id": "gpt-4",
+        "name": "GPT-4"
+      },
+      "prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
+      "temperature": 1,
+      "folderId": null
+    }
+  ],
+  "folders": [],
+  "prompts": []
+}

@@ -1,0 +1,889 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root {
+  --primary: #1e40af;
+  --accent: #fde68a;
+  --cta: #e8762e;
+  --text: #4b5563;
+  --foreground: #f3f4f6;
+  --border: #cbd6e2;
+}
+
+body {
+  font-family: Poppins;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Title classes */
+
+.title-bold-54 {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.title-bold-48 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.title-bold-40 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.title-semibold-54 {
+  font-weight: 600;
+  font-size: 54px;
+}
+
+.title-semibold-48 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.title-semibold-40 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* Subtitle classes */
+
+.subtitle-bold-32 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.subtitle-bold-28 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.subtitle-bold-24 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.subtitle-bold-20 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.subtitle-bold-16 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.subtitle-semibold-32 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.subtitle-semibold-28 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.subtitle-semibold-24 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.subtitle-semibold-20 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.subtitle-semibold-16 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Paragraph classes */
+
+.paragraph-bold-18 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.paragraph-bold-16 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.paragraph-bold-14 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.paragraph-bold-12 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.paragraph-semibold-18 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.paragraph-semibold-16 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.paragraph-semibold-14 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.paragraph-semibold-12 {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.paragraph-regular-18 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.paragraph-regular-16 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.paragraph-regular-14 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.paragraph-regular-12 {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* Mobile definitions */
+@media (max-width: 768px) {
+  .title-bold-54,
+  .title-semibold-54 {
+    font-size: 32px;
+  }
+
+  .title-bold-48,
+  .title-semibold-48 {
+    font-size: 28px;
+  }
+
+  .title-bold-40,
+  .title-semibold-40 {
+    font-size: 24px;
+  }
+
+  /* Modify the subtitle classes' font size */
+  .subtitle-bold-32,
+  .subtitle-semibold-32 {
+    font-size: 24px;
+  }
+
+  .subtitle-bold-28,
+  .subtitle-semibold-28 {
+    font-size: 22px;
+  }
+
+  .subtitle-bold-24,
+  .subtitle-semibold-24 {
+    font-size: 20px;
+  }
+
+  .subtitle-bold-20,
+  .subtitle-semibold-20 {
+    font-size: 18px;
+  }
+
+  .subtitle-bold-16,
+  .subtitle-semibold-16 {
+    font-size: 14px;
+  }
+
+  /* Modify the paragraph classes' font size */
+  .paragraph-bold-18,
+  .paragraph-semibold-18,
+  .paragraph-regular-18 {
+    font-size: 16px;
+  }
+
+  .paragraph-bold-16,
+  .paragraph-semibold-16,
+  .paragraph-regular-16 {
+    font-size: 14px;
+  }
+
+  .paragraph-bold-14,
+  .paragraph-semibold-14,
+  .paragraph-regular-14 {
+    font-size: 12px;
+  }
+
+  .paragraph-bold-12,
+  .paragraph-semibold-12,
+  .paragraph-regular-12 {
+    font-size: 10px;
+  }
+  .hero {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 889px;
+  }
+  .speaker img {
+    height: 220px !important;
+    width: 220px !important;
+    object-fit: contain;
+  }
+  .hero-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-content {
+    margin: auto 0;
+  }
+  .hero-speakers {
+    height: 612px;
+  }
+  #block1 {
+    width: 188px;
+    height: 188px;
+    position: absolute !important;
+    left: 0;
+    top: 200px;
+    z-index: 99;
+    filter: drop-shadow(-20px -20px 25px rgba(253, 207, 84, 0.2));
+  }
+  .radii1 {
+    border-radius: 100px;
+  }
+  #block2 {
+    width: 334px;
+    height: 317px;
+    position: absolute !important;
+    left: 140px;
+    top: 0;
+    z-index: 98;
+  }
+  .radii2 {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  #block3 {
+    width: 134px;
+    height: 159px;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+  .radii3 {
+    border-top-right-radius: 80px;
+  }
+  #block4 {
+    width: 297px;
+    height: 322px;
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+  }
+  .radii4 {
+    border-top-left-radius: 100px;
+  }
+  #block5 {
+    width: 221px;
+    height: 242px;
+    position: absolute !important;
+    left: 75px;
+    bottom: 0;
+  }
+  .radii5 {
+    border-top-right-radius: 100px;
+  }
+}
+
+.text-invert {
+  color: white;
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-ink {
+  color: var(--text);
+}
+.text-accent {
+  color: var(--accent);
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* hero  */
+.hero {
+  background-image: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-hero-tada-resize-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-speakers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  position: relative;
+}
+
+.block {
+  position: relative;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.block .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.bg1::before {
+  content: "";
+
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 99.99%,
+    rgba(217, 217, 217, 0) 100%
+  );
+}
+
+.bg2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fde68a;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.bg3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 99.99%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-top-right-radius: 80px;
+}
+
+.bg4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1e40af;
+  border-top-left-radius: 100px;
+}
+
+.bg5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 99.99%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-top-right-radius: 100px;
+}
+
+.primary {
+  background-color: #e8762e;
+  color: #fff;
+}
+a.primary {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+.cta {
+  margin-top: 3rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* countdown  */
+.countdown {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.box {
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    #bfdbfe 0%,
+    rgba(191, 219, 254, 0) 100%
+  );
+  border-image-slice: 1;
+  border-width: 1px;
+  padding: 0.75rem 2rem;
+  border-radius: 80px;
+}
+.radius {
+  border-radius: 80px;
+}
+.countdown .timer {
+  font-weight: bold;
+}
+.countdown .unit {
+  font-size: 14px;
+}
+.hero {
+  position: relative;
+}
+
+.hero-countdown {
+  background: #070035;
+  opacity: 0.4;
+  height: 275px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-container,
+.hero-content-countdown {
+  z-index: 99;
+}
+
+.hero-content-countdown {
+  position: relative;
+  padding: 3.25rem 0;
+  justify-content: space-between;
+}
+
+.about {
+  background: var(--foreground);
+  padding: 2rem 0;
+}
+
+.about-content {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-about-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 0 6rem 0;
+}
+
+.about-detail {
+  display: grid;
+  width: 42%;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* slider participant  */
+#carousel1,
+#carousel2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.participant {
+  min-width: 150px;
+  margin-right: 2rem;
+  display: flex;
+  border-radius: 100px;
+  background: var(--invert, #fff);
+  /* Natural */
+  /* box-shadow: 0px 16px 40px 0px rgba(112, 144, 176, 0.2); */
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+#carousel1 {
+  margin-top: 2.5rem;
+}
+#carousel2 {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* insight  */
+.insight {
+  background: linear-gradient(
+    123deg,
+    rgba(41, 56, 138, 0.8) 0%,
+    rgba(42, 57, 137, 0.8) 39%,
+    rgba(49, 62, 133, 0.8) 54%,
+    rgba(61, 72, 128, 0.8) 64%,
+    rgba(78, 85, 120, 0.8) 72%,
+    rgba(100, 103, 110, 0.8) 79%,
+    rgba(127, 125, 97, 0.8) 85%,
+    rgba(160, 151, 82, 0.8) 91%,
+    rgba(196, 180, 65, 0.8) 96%,
+    rgba(235, 211, 48, 0.8) 100%
+  );
+  padding: 4rem 0;
+  position: relative;
+}
+
+.insight-content {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.insight-item {
+  width: 150px;
+  display: grid;
+  gap: 4px;
+}
+.insight-group {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.bordered {
+  border-right: 1px solid var(--border);
+}
+
+/* speakers  */
+.speakers {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-speakers-resize-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 24rem 0 6rem;
+  margin-top: -18.4rem;
+}
+.speakers-content {
+  display: grid;
+  gap: 3rem;
+  text-align: center;
+}
+#speakerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.speaker {
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 12px;
+  width: fit-content;
+  background: white;
+}
+
+.speaker img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 12px;
+
+  border-top-right-radius: 12px;
+  background: var(
+    --gradient-tada-base,
+    linear-gradient(90deg, #bfdbfe 0%, rgba(191, 219, 254, 0) 100%)
+  );
+}
+
+.speaker h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.speaker p {
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flex-row img {
+  height: fit-content;
+  width: fit-content;
+}
+
+/* opportunities  */
+.opportunities {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-unlock-1.png");
+  padding: 5rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
+.d-grid-2 {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+.opp-about-desc {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.opp-about-desc p {
+  width: 70%;
+}
+.opp-detail {
+  display: grid;
+  gap: 2rem;
+}
+.opp-item img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.opp-item-desc {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* agenda  */
+
+.agenda {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.time {
+  width: 200px;
+}
+
+.number {
+  width: 32px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.number span {
+  background-color: var(--accent);
+  color: var(--primary);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  position: relative;
+  margin: auto;
+}
+
+.agenda-content {
+  position: relative;
+  flex: 1;
+}
+
+.agenda-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 2px;
+  height: 100%;
+  background: yellow;
+}
+
+.text {
+  flex: 8;
+}
+
+.the-detail {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  background: var(--foreground);
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.the-detail-break {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  background: rgba(253, 230, 138, 0.6);
+
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.gap-16 {
+  display: grid;
+  gap: 1rem;
+}
+
+.agenda-container {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-speaker-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+}
+
+.agenda-about {
+  display: grid;
+  gap: 2rem;
+  height: fit-content;
+}
+
+/* venue  */
+.venue {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-venue-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  height: 480px;
+}
+
+.venue-desc {
+  display: grid;
+  gap: 2rem;
+  height: fit-content;
+}
+
+/* sponsorship  */
+.sponsorship {
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.sponsorship-content {
+  display: grid;
+  gap: 3.75rem;
+}
+
+.sponsorship-item {
+  background-color: var(--foreground);
+  padding: 4rem;
+  border-radius: 1rem;
+  justify-content: center;
+  position: relative;
+  display: grid;
+  gap: 1rem;
+}
+
+img.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* collab  */
+.collab {
+  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-sponsorship-1.png");
+  height: 758px;
+  justify-content: center;
+  position: relative;
+}
+.collab-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  object-fit: cover;
+}
+
+/* contact  */
+.contact {
+  border-radius: 12px;
+  background: var(
+    --gradient-tada,
+    linear-gradient(
+      123deg,
+      rgba(41, 56, 138, 0.8) 0%,
+      rgba(42, 57, 137, 0.8) 39%,
+      rgba(49, 62, 133, 0.8) 54%,
+      rgba(61, 72, 128, 0.8) 64%,
+      rgba(78, 85, 120, 0.8) 72%,
+      rgba(100, 103, 110, 0.8) 79%,
+      rgba(127, 125, 97, 0.8) 85%,
+      rgba(160, 151, 82, 0.8) 91%,
+      rgba(196, 180, 65, 0.8) 96%,
+      rgba(235, 211, 48, 0.8) 100%
+    )
+  );
+  /* blur */
+  backdrop-filter: blur(5px);
+  padding: 4rem 3rem;
+  width: 70%;
+  margin: auto;
+  margin-top: -8rem;
+}
+
+.contact-content {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-item {
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
