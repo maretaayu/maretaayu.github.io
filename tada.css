@@ -11,6 +11,7 @@
 body {
   font-family: Poppins;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -242,6 +243,73 @@ p {
   .hero {
     padding: 2rem 0;
   }
+  .flex-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .countdown {
+    gap: 1rem !important;
+  }
+  .about-content {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .about-detail {
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #speakerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .agenda-container img,
+  .venue img {
+    width: 100%;
+  }
+
+  .agenda {
+    flex-direction: column; /* Tumpukan elemen secara vertikal */
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .time {
+    width: 100%; /* Membiarkan waktu menggunakan lebar penuh */
+    margin-bottom: 10px; /* Jarak antara waktu dan nomor */
+  }
+
+  .number {
+    width: 32px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    self-align: center; /* Mensejajarkan nomor ke tengah */
+  }
+
+  .agenda-content {
+    position: relative;
+    flex: 1;
+  }
+
+  .agenda-content::before {
+    left: 16px; /* Sejajarkan garis dengan nomor */
+  }
+
+  .the-detail,
+  .the-detail-break {
+    margin-left: 0; /* Hapus jarak sebelah kiri */
+    width: 100%; /* Biarkan konten menggunakan lebar penuh */
+  }
 }
 
 @media (min-width: 768px) {
@@ -317,6 +385,37 @@ p {
   }
   .radii5 {
     border-top-right-radius: 100px;
+  }
+
+  .about-content {
+    background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-about-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0 6rem 0;
+  }
+  .about-detail {
+    display: grid;
+    width: 42%;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #speakerGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .d-grid-2 {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -516,26 +615,6 @@ a {
   padding: 2rem 0;
 }
 
-.about-content {
-  background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-about-1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: grid;
-  gap: 2rem;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 0 6rem 0;
-}
-
-.about-detail {
-  display: grid;
-  width: 42%;
-  gap: 2rem;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
 /* slider participant  */
 #carousel1,
 #carousel2 {
@@ -615,13 +694,6 @@ a {
   gap: 3rem;
   text-align: center;
 }
-#speakerGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin: 0 auto;
-  width: fit-content;
-}
 
 .speaker {
   border: 1px solid #ccc;
@@ -674,11 +746,7 @@ a {
   background-repeat: no-repeat;
   margin-top: -10px;
 }
-.d-grid-2 {
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 1fr 1fr;
-}
+
 .opp-about-desc {
   display: grid;
   gap: 1.5rem;
@@ -840,6 +908,7 @@ img.logo {
   height: 758px;
   justify-content: center;
   position: relative;
+  background-position: center;
 }
 .collab-content {
   position: absolute;
