@@ -1,0 +1,97 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  z-index: 9999;
+  box-shadow: 0px 16px 40px 0px rgba(112, 144, 176, 0.2);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin-right: 20px;
+}
+#logo img {
+  height: 3rem;
+}
+#menu {
+  display: flex;
+}
+.menu-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+#menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#menu li {
+  margin-right: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.responsive-menu {
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.responsive-menu ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.responsive-menu li {
+  margin: 1rem;
+}
+
+.responsive-menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.responsive-menu.active ul {
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+}

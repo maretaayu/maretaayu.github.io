@@ -6,6 +6,19 @@
   --text: #4b5563;
   --foreground: #f3f4f6;
   --border: #cbd6e2;
+  --gradient-tada: linear-gradient(
+    123deg,
+    rgba(41, 56, 138, 0.8) 0%,
+    rgba(42, 57, 137, 0.8) 39%,
+    rgba(49, 62, 133, 0.8) 54%,
+    rgba(61, 72, 128, 0.8) 64%,
+    rgba(78, 85, 120, 0.8) 72%,
+    rgba(100, 103, 110, 0.8) 79%,
+    rgba(127, 125, 97, 0.8) 85%,
+    rgba(160, 151, 82, 0.8) 91%,
+    rgba(196, 180, 65, 0.8) 96%,
+    rgba(235, 211, 48, 0.8) 100%
+  );
 }
 
 body {
@@ -310,8 +323,70 @@ p {
     margin-left: 0; /* Hapus jarak sebelah kiri */
     width: 100%; /* Biarkan konten menggunakan lebar penuh */
   }
+  .opportunities {
+    text-align: center;
+  }
+  .opp-about-desc p {
+    width: 100% !important;
+  }
+  .oppotunities-content {
+    display: grid;
+    gap: 4rem;
+  }
+  .venue-desc {
+    margin-bottom: 3rem;
+  }
+  .sponsorship {
+    padding: 20rem 0 4rem !important;
+  }
+  .insight-group {
+    flex-flow: nowrap !important;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+  }
+  .insight-item {
+    width: 150px;
+    flex: 0 0 auto;
+    display: grid;
+    gap: 4px;
+  }
+  .bordered {
+    border: none !important;
+  }
+  .the-detail,
+  .the-detail-break {
+    width: 250px !important;
+  }
+  .box {
+    padding: 0.75rem 1.25rem !important;
+  }
+  .hero-countdown {
+    height: 280px !important;
+  }
+  .countdown {
+    margin-top: 1.5rem !important;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero-content-countdown {
+    padding: 4rem 0 1rem !important;
+    justify-content: center !important;
+  }
+  .collab-content {
+    width: 90%;
+  }
+  .venue {
+    margin-top: 3rem !important;
+  }
 }
-
+.hero {
+  margin-top: 5rem;
+}
 @media (min-width: 768px) {
   .hero {
     height: 889px;
@@ -388,14 +463,15 @@ p {
   }
 
   .about-content {
-    background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-about-1.png");
-    background-size: cover;
+    background: url("https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/bg-about-3.png");
+    background-size: contain;
     background-repeat: no-repeat;
     display: grid;
     gap: 2rem;
     justify-content: center;
     text-align: center;
     padding: 4rem 0 6rem 0;
+    background-position: center;
   }
   .about-detail {
     display: grid;
@@ -417,8 +493,15 @@ p {
     gap: 3rem;
     grid-template-columns: 1fr 1fr;
   }
+  .the-detail,
+  .the-detail-break {
+    width: 300px !important;
+  }
 }
-
+.agenda-container h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .text-invert {
   color: white;
 }
@@ -436,6 +519,16 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+.d-flex img,
+.venue-item img {
+  width: auto;
+  height: fit-content;
+}
+.venue-item {
+  display: flex;
+  gap: 1rem;
+}
+
 /* hero  */
 .hero {
   background-image: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-hero-tada-resize-1.png");
@@ -627,7 +720,8 @@ a {
   margin-right: 2rem;
   display: flex;
   border-radius: 100px;
-  background: var(--invert, #fff);
+  background: var(--gradient-tada);
+  color: white;
   /* Natural */
   /* box-shadow: 0px 16px 40px 0px rgba(112, 144, 176, 0.2); */
   padding: 1rem 2rem;
@@ -685,6 +779,7 @@ a {
 .speakers {
   background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-speakers-resize-1.png");
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 24rem 0 6rem;
   margin-top: -18.4rem;
@@ -699,7 +794,7 @@ a {
   border: 1px solid #ccc;
   text-align: center;
   border-radius: 12px;
-  width: fit-content;
+  width: unset;
   background: white;
 }
 
@@ -736,6 +831,10 @@ a {
 .flex-row img {
   height: fit-content;
   width: fit-content;
+}
+.contact-item img {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* opportunities  */
@@ -850,7 +949,7 @@ a {
   background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-speaker-1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .agenda-about {
@@ -887,7 +986,7 @@ a {
 
 .sponsorship-item {
   background-color: var(--foreground);
-  padding: 4rem;
+  padding: 4rem 1.5rem;
   border-radius: 1rem;
   justify-content: center;
   position: relative;
@@ -905,14 +1004,17 @@ img.logo {
 /* collab  */
 .collab {
   background: url("https://www.usetada.com/wp-content/uploads/2023/07/bg-sponsorship-1.png");
-  height: 758px;
+  height: 400px;
+  background-repeat: no-repeat;
   justify-content: center;
   position: relative;
+  background-size: cover;
+  /* background-attachment: fixed; */
   background-position: center;
 }
 .collab-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -955,4 +1057,5 @@ img.logo {
   background-color: white;
   padding: 0.7rem;
   border-radius: 0.5rem;
+  align-items: center;
 }

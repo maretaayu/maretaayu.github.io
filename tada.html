@@ -5,11 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="tada.css" />
+    <link rel="stylesheet" href="footer.css">
     <meta name="robots" content="noindex" />
   </head>
   <body>
-    <section class="hero">
+    <header>
+     <div class="page-center">
+     <div class="header-menu">
+      <div id="logo">
+        <img src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/cropped-logo.png" alt="Logo">
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#sponsorship">Sponsorship</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/ep_menu-1.png" alt="menu" >
+    </div>
+    <div class="responsive-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#sponsorship">Sponsorship</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+     </div>
+     </div>
+  </header>
+    <section class="hero" id="hero">
       <div class="page-center hero-container">
         <div class="hero-content text-invert">
           <h1 class="title-bold-54">Loyalty Rewards Conference 2023</h1>
@@ -93,7 +128,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-content">
         <h2 class="title-bold-40 text-ink">About</h2>
         <div class="about-detail">
@@ -143,7 +178,7 @@
       </div>
     </section>
 
-    <section class="insight">
+    <section class="insight" id="insight">
       <div class="page-center">
         <div class="insight-content">
           <h2 class="title-bold-40 text-invert">
@@ -151,31 +186,31 @@
           </h2>
           <div class="d-flex insight-group">
             <div class="insight-item bordered">
-              <p class="subtitle-bold-32 text-accent">500+</p>
+              <span class="subtitle-bold-32 text-accent" >500+</p>
               <p class="paragraph-regular-16 text-invert">Attendees</p>
             </div>
             <div class="insight-item bordered">
-              <p class="subtitle-bold-32 text-accent">500+</p>
-              <p class="paragraph-regular-16 text-invert">Attendees</p>
+              <span class="subtitle-bold-32 text-accent">200+</p>
+              <p class="paragraph-regular-16 text-invert">Companies</p>
             </div>
             <div class="insight-item bordered">
-              <p class="subtitle-bold-32 text-accent">500+</p>
-              <p class="paragraph-regular-16 text-invert">Attendees</p>
+              <span class="subtitle-bold-32 text-accent">100+</p>
+              <p class="paragraph-regular-16 text-invert">C-Levels</p>
             </div>
             <div class="insight-item bordered">
-              <p class="subtitle-bold-32 text-accent">500+</p>
-              <p class="paragraph-regular-16 text-invert">Attendees</p>
+              <span class="subtitle-bold-32 text-accent">15+</p>
+              <p class="paragraph-regular-16 text-invert">Speakers</p>
             </div>
             <div class="insight-item">
-              <p class="subtitle-bold-32 text-accent">500+</p>
-              <p class="paragraph-regular-16 text-invert">Attendees</p>
+              <span class="subtitle-bold-32 text-accent">10+</p>
+              <p class="paragraph-regular-16 text-invert">Exhibitors</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="speakers">
+    <section class="speakers" id="speakers">
       <div class="page-center">
         <div class="speakers-content">
           <h2 class="title-bold-40 text-invert">Meet Our Speakers</h2>
@@ -186,7 +221,7 @@
       </div>
     </section>
 
-    <section class="opportunities">
+    <section class="opportunities" id="opportunities">
       <div class="page-center">
         <div class="oppotunities-content d-grid-2">
           <div class="opp-about">
@@ -251,20 +286,103 @@
       </div>
     </section>
 
-    <section class="agenda-container">
+    <section class="agenda-container" id="agenda">
       <div class="page-center">
+        <h2 class="title-bold-40 text-ink">Agenda</h2>
+
         <div class="d-grid-2">
-          <div class="agenda-about">
-            <h2 class="title-bold-40 text-ink">Agenda</h2>
-            <p class="paragraph-regular-16 text-ink">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
-            </p>
-            <img
-              src="https://www.usetada.com/wp-content/uploads/2023/07/agenda.png"
-              alt="Image Agenda"
-            />
+          <div class="agenda-detail">
+            <div class="agenda">
+              <div class="time paragraph-regular-16">09.00 - 10.00</div>
+              <div class="number paragraph-semibold-16"><span>1</span></div>
+              <div class="agenda-content">
+                <div class="the-detail paragraph-bold-18 text-ink">
+                  <h3>Registration, Guided networking session</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="agenda">
+              <div class="time paragraph-regular-16">10.00 - 11.00</div>
+              <div class="number paragraph-semibold-16"><span>2</span></div>
+              <div class="agenda-content">
+                <div class="the-detail paragraph-bold-18 text-ink">
+                  <div class="speech gap-16">
+                    <h3>Keynote Speech</h3>
+                    <div class="flex-row">
+                      <img
+                        src="https://www.usetada.com/wp-content/uploads/2023/07/Photo-Speaker.png"
+                        alt="Speaker"
+                      />
+                      <div class="speech-detail">
+                        <p class="subtitle-semibold-16">Antonius Taufan</p>
+                        <p class="paragraph-regular-14">
+                          CEO & Managing Director Tada
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="agenda">
+              <div class="time paragraph-regular-16">11.00 - 12.00</div>
+              <div class="number paragraph-semibold-16"><span>3</span></div>
+              <div class="agenda-content">
+                <div class="the-detail paragraph-bold-18 text-ink">
+                  <div class="speech gap-16">
+                    <h3>Keynote Speech</h3>
+                    <div class="flex-row">
+                      <img
+                        src="https://www.usetada.com/wp-content/uploads/2023/07/Photo-Speaker.png"
+                        alt="Speaker"
+                      />
+                      <div class="speech-detail">
+                        <p class="subtitle-semibold-16">Antonius Taufan</p>
+                        <p class="paragraph-regular-14">
+                          CEO & Managing Director Tada
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="agenda">
+              <div class="time paragraph-regular-16">12.00 - 13.00</div>
+              <div class="number paragraph-semibold-16"><span>4</span></div>
+              <div class="agenda-content">
+                <div class="the-detail-break paragraph-bold-18 text-ink">
+                  Executive Lunch
+                </div>
+              </div>
+            </div>
+
+            <div class="agenda">
+              <div class="time paragraph-regular-16">11.00 - 12.00</div>
+              <div class="number paragraph-semibold-16"><span>5</span></div>
+              <div class="agenda-content">
+                <div class="the-detail paragraph-bold-18 text-ink">
+                  <div class="speech gap-16">
+                    <h3>Keynote Speech</h3>
+                    <div class="flex-row">
+                      <img
+                        src="https://www.usetada.com/wp-content/uploads/2023/07/Photo-Speaker.png"
+                        alt="Speaker"
+                      />
+                      <div class="speech-detail">
+                        <p class="subtitle-semibold-16">Antonius Taufan</p>
+                        <p class="paragraph-regular-14">
+                          CEO & Managing Director Tada
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="agenda-detail">
             <div class="agenda">
@@ -363,12 +481,12 @@
       </div>
     </section>
 
-    <section class="venue">
+    <section class="venue" id="venue">
       <div class="page-center">
         <div class="venue-content d-grid-2">
           <div class="venue-desc">
             <h2 class="title-bold-40 text-invert">Venue</h2>
-            <div class="venue-item flex-row">
+            <div class="venue-item">
               <img
                 src="https://www.usetada.com/wp-content/uploads/2023/07/icon-place.png"
                 alt="Icon Place"
@@ -382,7 +500,7 @@
                 </p>
               </div>
             </div>
-            <div class="venue-item flex-row">
+            <div class="venue-item ">
               <img
                 src="https://www.usetada.com/wp-content/uploads/2023/07/icon-time.png"
                 alt="Icon Place"
@@ -407,13 +525,13 @@
       </div>
     </section>
 
-    <section class="sponsorship">
+    <section class="sponsorship" id="sponsorship">
       <div class="page-center">
         <div class="sponsorship-content">
           <h2 class="title-bold-40 text-ink">Sponsorship</h2>
           <div class="sponsorship-item">
             <img
-              src="https://www.usetada.com/wp-content/uploads/2023/07/platinum-logo.png"
+              src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/asset-web-1-02-1.png"
               alt="Platinum"
               class="logo"
             />
@@ -432,11 +550,11 @@
 
           <div class="sponsorship-item">
             <img
-              src="https://www.usetada.com/wp-content/uploads/2023/07/gold-logo.png"
-              alt="Platinum"
+              src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/asset-web-1-02-1-1.png"
+              alt="Gold"
               class="logo"
             />
-            <p class="subtitle-sembold-16 text-ink">Platinum Sponsor</p>
+            <p class="subtitle-sembold-16 text-ink">Gold Sponsor</p>
             <div class="flex-row">
               <img
                 src="https://www.usetada.com/wp-content/uploads/2023/07/ayoconnect.png"
@@ -451,11 +569,11 @@
 
           <div class="sponsorship-item">
             <img
-              src="https://www.usetada.com/wp-content/uploads/2023/07/silver-logo.png"
-              alt="Platinum"
+              src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/asset-web-1-02-1-2.png"
+              alt="Silver"
               class="logo"
             />
-            <p class="subtitle-sembold-16 text-ink">Platinum Sponsor</p>
+            <p class="subtitle-sembold-16 text-ink">Silver Sponsor</p>
             <div class="flex-row">
               <img
                 src="https://www.usetada.com/wp-content/uploads/2023/07/ayoconnect.png"
@@ -471,7 +589,7 @@
       </div>
     </section>
 
-    <section class="collab">
+    <section class="collab" id="collaboration">
       <div class="page-center">
         <div class="collab-content gap-16">
           <h2 class="title-bold-40 text-invert">
@@ -482,14 +600,11 @@
             forefront of a rapidly evolving ecosystem, an exclusive opportunity
             you don’t want to miss out.
           </p>
-          <div class="cta">
-            <a href="#" class="primary">Register Now</a>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-content flex-row">
         <h2 class="subtitle-bold-20 text-accent">Got a Question for Us?</h2>
         <div class="contact-detail flex-row">
@@ -520,6 +635,31 @@
         </div>
       </div>
     </section>
+
+    <section class="footer" id="footer">
+      <div class="page-center">
+       <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/cropped-logo.png" alt="Logo">
+        </div>
+        <div class="footer-item">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+        </ul>
+        <ul>
+
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#sponsorship">Sponsorship</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+       </div>
+      </div>
+    </section>
     <script src="tada.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

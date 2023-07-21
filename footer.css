@@ -1,0 +1,30 @@
+.footer {
+  background: var(--foreground);
+  padding: 9rem 0 1rem;
+  margin-top: -90px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo img {
+  width: 200px;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+.footer a {
+  color: var(--text);
+}
+.footer-item {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
