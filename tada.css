@@ -1070,6 +1070,7 @@ img.logo {
   background: white;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0px 16px 40px 0px rgba(112, 144, 176, 0.2);
 }
 .break {
   /* background: rgba(253, 230, 138, 0.6); */
