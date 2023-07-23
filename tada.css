@@ -285,7 +285,6 @@ p {
     margin: 0 auto;
     width: fit-content;
   }
-  .agenda-container img,
   .venue img {
     width: 100%;
   }
@@ -1058,4 +1057,61 @@ img.logo {
   padding: 0.7rem;
   border-radius: 0.5rem;
   align-items: center;
+}
+
+/* agenda 2  */
+
+.group-agenda {
+  display: grid;
+  gap: 1rem;
+}
+.box-agenda {
+  display: flex;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.break {
+  /* background: rgba(253, 230, 138, 0.6); */
+  background: var(--accent);
+}
+.networking {
+  background: var(--primary);
+}
+.agenda-time {
+  min-width: 150px;
+}
+
+.agenda-value {
+  display: grid;
+  gap: 1.5rem;
+}
+.agenda-speaker {
+  display: grid;
+  gap: 0.75rem;
+}
+.agenda-speaker-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.agenda-speaker-item {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .box-agenda {
+    flex-direction: column;
+  }
+  .agenda-time,
+  .agenda-value {
+    width: 100%;
+  }
+
+  .agenda-speaker-item {
+    flex-basis: 100%;
+  }
 }

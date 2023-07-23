@@ -144,3 +144,167 @@ speakers.forEach((speaker) => {
     `;
   speakersDiv.appendChild(speakerDiv);
 });
+
+// Agenda data array
+const agendaData = [
+  {
+    time: "09.00 - 09.30",
+    value: "Registration, Guided networking session",
+    category: "agenda",
+    speakers: [
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "Antonius Taufan",
+        position: "CEO & Managing Director Tada",
+      },
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "Antonius Taufan",
+        position: "CEO & Managing Director Tada",
+      },
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "Antonius Taufan",
+        position: "CEO & Managing Director Tada",
+      },
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "Antonius Taufan",
+        position: "CEO & Managing Director Tada",
+      },
+    ],
+  },
+  {
+    time: "09.30 - 10.00",
+    value: "Keynote Session",
+    category: "agenda",
+    speakers: [
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "John Doe",
+        position: "CEO",
+      },
+    ],
+  },
+  {
+    time: "10.00 - 10.30",
+    value: "Executive Lunch",
+    category: "break",
+    speakers: [],
+  },
+  {
+    time: "09.30 - 10.00",
+    value: "Keynote Session",
+    category: "agenda",
+    speakers: [
+      {
+        photo:
+          "https://loyaltyrewards-conference.com/wp-content/uploads/2023/07/Photo-Speaker-2.png",
+        name: "John Doe",
+        position: "CEO",
+      },
+    ],
+  },
+  {
+    time: "10.00 - 10.30",
+    value: "Coffee Break and Networking",
+    category: "networking",
+    speakers: [],
+  },
+];
+
+// Generate the HTML markup using the agenda data
+function generateAgendaMarkup() {
+  const groupAgendaElement = document.querySelector(".group-agenda");
+  for (const agendaItem of agendaData) {
+    const boxAgendaElement = document.createElement("div");
+    boxAgendaElement.classList.add("box-agenda", agendaItem.category);
+
+    const timeElement = document.createElement("div");
+    timeElement.classList.add("agenda-time");
+    const timeText = document.createElement("p");
+    timeText.classList.add(
+      "paragraph-regular-16",
+      getTextColorClass(agendaItem.category)
+    );
+    timeText.textContent = agendaItem.time;
+    timeElement.appendChild(timeText);
+
+    const valueElement = document.createElement("div");
+    valueElement.classList.add(
+      "agenda-value",
+      getTextColorClass(agendaItem.category)
+    );
+    const valueTitleElement = document.createElement("div");
+    valueTitleElement.classList.add("agenda-title");
+    const valueTitleText = document.createElement("p");
+    valueTitleText.classList.add("paragraph-bold-18");
+    valueTitleText.textContent = agendaItem.value;
+    valueTitleElement.appendChild(valueTitleText);
+    valueElement.appendChild(valueTitleElement);
+
+    if (agendaItem.speakers.length > 0) {
+      const speakersElement = document.createElement("div");
+      speakersElement.classList.add("agenda-speaker");
+      const speakersText = document.createElement("p");
+      speakersText.classList.add("paragraph-regular-14");
+      speakersText.textContent = "Speakers";
+      speakersElement.appendChild(speakersText);
+
+      const speakerListElement = document.createElement("div");
+      speakerListElement.classList.add("agenda-speaker-list");
+
+      for (const speaker of agendaItem.speakers) {
+        const speakerItemElement = document.createElement("div");
+        speakerItemElement.classList.add("agenda-speaker-item");
+
+        const speakerPhotoElement = document.createElement("img");
+        speakerPhotoElement.src = speaker.photo;
+        speakerPhotoElement.alt = "Speaker";
+        speakerItemElement.appendChild(speakerPhotoElement);
+
+        const speakerDetailElement = document.createElement("div");
+        speakerDetailElement.classList.add("agenda-speaker-detail");
+
+        const speakerNameElement = document.createElement("p");
+        speakerNameElement.classList.add("paragraph-bold-16");
+        speakerNameElement.textContent = speaker.name;
+        speakerDetailElement.appendChild(speakerNameElement);
+
+        const speakerPositionElement = document.createElement("p");
+        speakerPositionElement.classList.add("paragraph-regular-14");
+        speakerPositionElement.textContent = speaker.position;
+        speakerDetailElement.appendChild(speakerPositionElement);
+
+        speakerItemElement.appendChild(speakerDetailElement);
+        speakerListElement.appendChild(speakerItemElement);
+      }
+
+      speakersElement.appendChild(speakerListElement);
+      valueElement.appendChild(speakersElement);
+    }
+
+    boxAgendaElement.appendChild(timeElement);
+    boxAgendaElement.appendChild(valueElement);
+    groupAgendaElement.appendChild(boxAgendaElement);
+  }
+}
+
+// Function to get the text color class based on the category
+function getTextColorClass(category) {
+  if (category === "networking") {
+    return "text-invert";
+  } else {
+    return "text-ink";
+  }
+}
+
+// Call the function to generate the agenda markup and apply styling on page load
+window.onload = function () {
+  generateAgendaMarkup();
+};
